@@ -10,7 +10,7 @@ Grupo de Neurocomputación Biológica (GNB), Universidad Autónoma de Madrid
 ![(Wang, 1993) Persistent sodium current](wang_1993_inap.png)
 
 <!--start-->
-<p><b>Persistent sodium current from (Wang, 1993) neuron model.</p>
+<p><b>Persistent sodium current from (Wang, 1993) neuron model.</b></p>
 <!--end-->
 
 #### Input
