@@ -14,7 +14,7 @@ Grupo de Neurocomputación Biológica (GNB), Universidad Autónoma de Madrid
 <!--end-->
 
 #### Input
-1. input(0) - v (mV) : Membrane voltage
+1. input(0) - v (V) : Membrane potential
 
 #### Output
 1. output(0) - I (nA) : Ionic current

@@ -33,7 +33,7 @@ createRTXIPlugin(void)
 
 static DefaultGUIModel::variable_t vars[] = {
 
-  {"v (mV)", "Membrane Voltage", DefaultGUIModel::INPUT, },
+  {"v (V)", "Membrane potential", DefaultGUIModel::INPUT, },
   {"I (nA)", "Ionic current", DefaultGUIModel::OUTPUT, },
   {"g (uS)", "Conductance", DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE,},
   {"E (mV)", "Reversion potential", DefaultGUIModel::PARAMETER | DefaultGUIModel::DOUBLE,},
@@ -63,7 +63,7 @@ Wang_1993Inap::~Wang_1993Inap(void)
 void
 Wang_1993Inap::execute(void)
 {
-  double v = input(0);
+  double v = input(0) * 1000;
   double mnap = 1.0 / (1.0 + exp(- (v + 51.0) / 5.0));
 
   output(0) = g * mnap * (v - e);
